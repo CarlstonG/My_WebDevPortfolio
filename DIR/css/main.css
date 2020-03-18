@@ -128,7 +128,7 @@ h1, h2, h3 {
     font-family: "Pacifico", cursive;
     margin-bottom: 2rem;
     padding: 0.2rem;
-    background: rgba(22, 15, 15, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: #faf2f2; }
 
 a {
@@ -143,6 +143,9 @@ header {
 .secondary-text {
   color: #06b5fa;
   font-family: "Lobster", cursive; }
+
+.Tri-text {
+  color: #161515; }
 
 main {
   padding: 4rem;
@@ -213,6 +216,35 @@ main {
   padding: 0.5rem;
   border-bottom: #baf706 5px solid; }
 
+.Projects {
+  display: grid;
+  grid-gap: 0.8rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .Projects img {
+    width: 100%;
+    border: black solid; }
+    .Projects img:hover {
+      opacity: 0.5;
+      border-color: skyblue;
+      transition: all 0.6s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: yellowgreen;
+    color: #000000; }
+
+.btn-dark {
+  background: black;
+  color: white; }
+
+.btn-light {
+  background: #c4a8a8;
+  color: #332e2e; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -231,6 +263,14 @@ main {
     bottom: 0;
     width: 100%;
 }*/
+@media screen and (min-width: 1171px) {
+  .Projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (max-width: 769px) and (max-width: 11170px) {
+  .Projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -257,7 +297,9 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .Projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -265,4 +307,15 @@ main {
     align-items: center;
     text-align: center; }
     main#home h1.lg-header {
-      font-size: 3rem; } }
+      font-size: 3rem; }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  main#about h1 {
+    margin-top: 5vh;
+    align-items: center;
+    text-align: center; }
+    main#about h1.lg-header {
+      font-size: 2rem; }
+  .Projects {
+    grid-template-columns: 1fr; } }

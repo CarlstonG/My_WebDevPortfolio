@@ -1,11 +1,17 @@
 //Media Query
 
 @include mediaXl {
-
+.Projects {
+ grid-template-columns: repeat(4, 1fr);
+}
 
 }
 
 @include mediaLg {
+    .Projects {
+        grid-template-columns: repeat(4, 1fr);
+       }
+       
     
 }
 
@@ -55,6 +61,12 @@
         'job3';
         grid-template-columns: 1fr;
     }
+
+
+    .Projects {
+        grid-template-columns: repeat(2, 1fr);
+       }
+       
 }
 
 @include mediaSm {
@@ -69,4 +81,28 @@
  
     }
 
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+        grid-template-columns: 1fr;
+    }
+
+
+    main#about h1 {
+        margin-top: 5vh;
+        align-items: center;
+        text-align: center;
+        &.lg-header {
+            font-size: 2rem;
+        }
+}
+
+.Projects {
+    grid-template-columns: 1fr;
+   }
+   
 }
