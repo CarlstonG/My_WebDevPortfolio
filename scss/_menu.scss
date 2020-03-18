@@ -11,7 +11,7 @@
     width: 28px;
     height: 4px;
     margin: 0 0 5px 0;
-    background: whitesmoke;
+    background: $text-secondary;
     @include easeOut();
 }
 

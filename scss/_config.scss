@@ -39,6 +39,18 @@ $tri-font: 'Pacifico', cursive;
     }
 }
 
+//text var color
+
+@function set-text-color($color){
+    @if (lightness($color) > 40) {
+        @return #000;
+
+    } @else {
+        @return #fff;
+    }
+}
+
+
 // Media Query
 
 @mixin mediaSm {
