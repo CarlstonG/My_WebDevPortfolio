@@ -156,6 +156,35 @@ main {
     border-bottom: $icon-color 5px solid;
 }
 
+//my contacts
+.mycontact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+
+    div {
+        font-size: 2rem;
+        border: 3px grey solid;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+
+    &:hover {
+        padding: 0.5rem 1.5rem;
+        background: rgb(148, 243, 4);
+        color: rgb(9, 179, 247);
+        span {
+            color: rgb(12, 12, 12);
+        }
+    }
+
+    }
+
+}
+
 
 //My Projects
 
