@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Modern Portfolio",
   "main": "index.js",
-  "homepage": "http://CarlstonG.github.io/My_WebDevPortfolio",
+  "homepage": "https://CarlstonG.github.io/My_WebDevPortfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o DIR/css/ --recursive",
     "deploy": "gh-pages -d DIR"
