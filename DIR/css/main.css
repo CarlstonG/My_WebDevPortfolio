@@ -59,7 +59,7 @@
     .menu-branding .profile {
       width: 250px;
       height: 250px;
-      background: url(/DIR/img/profile.png);
+      background: url(../img/profile.png);
       border-radius: 50%;
       border: solid 3px #baf706;
       object-fit: cover; }
@@ -105,7 +105,7 @@ body {
   line-height: 1.5;
   font-weight: 800; }
   body#main-bg {
-    background: url(/DIR/img/originalbackground.jpg);
+    background: url(../img/originalbackground.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#main-bg .overlay {

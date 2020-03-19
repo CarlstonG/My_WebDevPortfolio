@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Modern Portfolio",
   "main": "index.js",
+  "homepage": "http://CarlstonG.github.io/My_WebDevPortfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o DIR/css/ --recursive"
+    "sass": "node-sass -w scss/ -o DIR/css/ --recursive",
+    "deploy": "gh-pages -d DIR"
   },
   "author": "Carlston Grefalde",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
 }
