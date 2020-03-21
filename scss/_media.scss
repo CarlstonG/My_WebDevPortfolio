@@ -83,6 +83,34 @@
  
     }
 
+    main#work h1 {
+        margin-top: 10vh;
+        align-items: center;
+        text-align: center;
+        &.lg-header {
+            font-size: 3rem;
+        }
+    
+ 
+    }
+
+    main#contacts h1 {
+        margin-top: 10vh;
+        align-items: center;
+        text-align: center;
+
+
+  
+
+
+
+        &.lg-header {
+            font-size: 3rem;
+        }
+    
+ 
+    }
+
     .about-info {
         grid-template-areas: 
         'bioimage'
@@ -106,5 +134,7 @@
 .Projects {
     grid-template-columns: 1fr;
    }
-   
+         .mycontacts {
+            font-size: small;
+        }
 }
