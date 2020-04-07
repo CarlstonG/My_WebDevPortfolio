@@ -247,6 +247,20 @@ main {
       opacity: 0.5;
       border-color: skyblue;
       transition: all 0.6s ease-out; }
+  .Projects .btnn {
+    display: block;
+    background: white;
+    padding: 0.5rem 5rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    font-family: "Lobster", cursive;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.3rem; }
+    .Projects .btnn:hover {
+      background: yellowgreen;
+      color: #000000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
